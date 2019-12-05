@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="projectoFinal.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Registro de cuenta" 
+               FontSize="Large"
+               TextColor="Black"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+        <Entry x:Name="nombre"
+               Placeholder="Nombre" />
+        <Entry x:Name="primerApellido"
+               Placeholder="Primer apellido" />
+        <Entry x:Name="segundoApellido"
+               Placeholder="Segundo apellido" />
+        <Label Text="Fecha de nacimiento:" />
+        <DatePicker x:Name="fechaNacimiento"
+                    MinimumDate="01/01/1901" 
+                    MaximumDate="11/26/2019"/>
+        <Entry x:Name="correoElectronico"
+               Placeholder="Correo electrónico" />
+        <Entry x:Name="telefonoContacto"
+               Placeholder="Télefono de contacto" 
+               Keyboard="Telephone"/>
+        <Entry x:Name="contrasena"
+               Placeholder="Contraseña" 
+               IsPassword="True"/>
+        <Entry x:Name="contrasenaReescritura"
+               Placeholder="Re-escritura de contraseña" 
+               IsPassword="True"/>
+        <Button Text="Enviar"
+            VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="Button_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
